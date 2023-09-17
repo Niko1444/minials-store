@@ -1,12 +1,19 @@
-import { useState } from 'react'
-import './App.css'
+import { useState } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./components/Header/Header.css";
+
+import Header from "./components/Header";
+// import Carousel from "./components/Carousel";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
-    <h1>Hello World!</h1>
-  )
+    <div>
+      <Header />
+      {/* <Carousel /> */}
+    </div>
+  );
 }
 
-export default App
+export default App;

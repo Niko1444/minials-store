@@ -1,0 +1,72 @@
+$color-beige: #f5f6f8;
+$color-brown: #383838;
+$color-grey: #888a91;
+$color-white: #fff;
+
+* {
+  font-family: Josefin Sans, sans-serif;
+}
+
+header {
+  background-color: $color-white;
+  color: $color-brown;
+  display: flex;
+  padding: 2rem 0rem;
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
+}
+
+header ul {
+  text-decoration: none;
+  color: $color-brown;
+  list-style-type: none;
+}
+
+header ul a {
+  text-decoration: none;
+  color: $color-brown;
+}
+
+header ul a:last-child {
+  margin-right: 3rem;
+}
+
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .menu-setting-col{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+
+header .menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+header .setting a{
+  color: $color-brown;
+  margin: 0rem 0.5rem;
+}
+
+header .header-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+header .setting svg{
+  font-size: 1.7rem;
+}

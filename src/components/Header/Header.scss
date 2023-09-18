@@ -1,4 +1,4 @@
-$color-beige: #f5f6f8;
+$color-beige: #ffebb9d6;
 $color-brown: #383838;
 $color-grey: #888a91;
 $color-white: #fff;
@@ -7,66 +7,76 @@ $color-white: #fff;
   font-family: Josefin Sans, sans-serif;
 }
 
-header {
+.Header {
   background-color: $color-white;
   color: $color-brown;
-  display: flex;
-  padding: 2rem 0rem;
+  padding: 1.5rem 0rem;
 }
 
-header h1 {
+.Header ul {
+list-style-type: none;
+}
+
+.Header a{
+  color: $color-brown;
+  text-decoration: none;
+}
+
+.Header .Header__RowWrap{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Header .Header__Logo h1{
   font-size: 3rem;
-  font-weight: 800;
+  font-weight: 700;
   margin: 0;
   padding: 0;
 }
 
-header ul {
-  text-decoration: none;
-  color: $color-brown;
-  list-style-type: none;
-}
-
-header ul a {
-  text-decoration: none;
-  color: $color-brown;
-}
-
-header ul a:last-child {
-  margin-right: 3rem;
-}
-
-header ul {
+.Header .Header__Menu nav{
   display: flex;
-  justify-content: center;
   align-items: center;
+  margin: 0 2rem;
 }
 
-header .menu-setting-col{
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
+.Header .Header__Menu nav a{
+  margin: 0 1.5rem;
 }
 
-header .menu{
+.Header .Header__ColWrap2 {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
   align-items: center;
+  justify-content: flex-end;
 }
 
-header .setting a{
-  color: $color-brown;
-  margin: 0rem 0.5rem;
+.Header .Header__Setting svg{
+  font-size: 1.6rem;
+  margin: 0 0.4rem;
 }
 
-header .header-row {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+.Header .Header__Setting{
+  margin-left: 1.5rem;
 }
 
-header .setting svg{
-  font-size: 1.7rem;
+Header nav a{
+  box-sizing: border-box;
+  transition: all 0.3s ease-out;
+}
+
+Header nav a:hover,.active{
+  background-color: $color-beige;
+  padding: 0.4rem 0.6rem;
+  border-radius: 2rem;
+  font-weight: 700;
+}
+
+.Header .Header__Setting svg {
+  box-sizing: border-box;
+  transition: all 0.3s ease-out;
+}
+
+Header .Header__Setting svg:hover{
+  font-size: 2.5rem;
 }

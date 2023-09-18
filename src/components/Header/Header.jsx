@@ -16,9 +16,11 @@ const Header = () => {
           <div className="Header__RowWrap">
             <Col md={3}>
               <div className="Header__ColWrap1">
-                <Link to="/" className="Header__Logo">
-                  <h1>MINIALS</h1>
-                </Link>
+                <div className="Header__Logo">
+                  <h1>
+                    <Link to="/">MINIALS</Link>
+                  </h1>
+                </div>
               </div>
             </Col>
             <Col md={9}>

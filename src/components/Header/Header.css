@@ -77,4 +77,19 @@ Header .Header__Setting svg:hover {
   font-size: 2.5rem;
 }
 
+@media (min-width: 994px) {
+  .Header .Header__Burger {
+    display: none;
+  }
+}
+
+@media (max-width: 994px) {
+  .Header .Header__Menu nav {
+    display: none;
+  }
+  .Header .Header__Setting {
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=Header.css.map */

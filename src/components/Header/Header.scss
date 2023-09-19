@@ -14,34 +14,34 @@ $color-white: #fff;
 }
 
 .Header ul {
-list-style-type: none;
+  list-style-type: none;
 }
 
-.Header a{
+.Header a {
   color: $color-brown;
   text-decoration: none;
 }
 
-.Header .Header__RowWrap{
+.Header .Header__RowWrap {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.Header .Header__Logo {
+.Header .Header__Logo h1 {
   font-size: 3rem;
   font-weight: 700;
   margin: 0;
   padding: 0;
 }
 
-.Header .Header__Menu nav{
+.Header .Header__Menu nav {
   display: flex;
   align-items: center;
   margin: 0 2rem;
 }
 
-.Header .Header__Menu nav a{
+.Header .Header__Menu nav a {
   margin: 0 1.5rem;
 }
 
@@ -51,21 +51,22 @@ list-style-type: none;
   justify-content: flex-end;
 }
 
-.Header .Header__Setting svg{
+.Header .Header__Setting svg {
   font-size: 1.6rem;
   margin: 0 0.4rem;
 }
 
-.Header .Header__Setting{
+.Header .Header__Setting {
   margin-left: 1.5rem;
 }
 
-Header nav a{
+Header nav a {
   box-sizing: border-box;
   transition: all 0.3s ease-out;
 }
 
-Header nav a:hover,.active{
+Header nav a:hover,
+.active {
   background-color: $color-beige;
   padding: 0.4rem 0.6rem;
   border-radius: 2rem;
@@ -77,6 +78,22 @@ Header nav a:hover,.active{
   transition: all 0.3s ease-out;
 }
 
-Header .Header__Setting svg:hover{
+Header .Header__Setting svg:hover {
   font-size: 2.5rem;
+}
+
+@media (min-width: 994px) {
+  .Header .Header__Burger {
+    display: none;
+  }
+}
+
+@media (max-width: 994px) {
+  .Header .Header__Menu nav {
+    display: none;
+  }
+
+  .Header .Header__Setting {
+    display: none;
+  }
 }

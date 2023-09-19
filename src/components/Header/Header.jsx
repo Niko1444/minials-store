@@ -7,6 +7,7 @@ import SettingsIcon from "@mui/icons-material/Settings";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
+import MenuIcon from "@mui/icons-material/Menu";
 
 const Header = () => {
   return (
@@ -53,6 +54,11 @@ const Header = () => {
                   </Link>
                   <Link>
                     <ShoppingCartIcon />
+                  </Link>
+                </div>
+                <div className="Header__Burger">
+                  <Link>
+                    <MenuIcon />
                   </Link>
                 </div>
               </div>

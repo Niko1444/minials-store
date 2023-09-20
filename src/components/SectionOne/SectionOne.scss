@@ -1,0 +1,56 @@
+$color-beige: #ffebb9d6;
+$color-beigefull: #ffebb9;
+$color-brown: #383838;
+$color-grey: #888a91;
+$color-white: #fff;
+
+.SectionOne__Carousel img {
+  max-width: 100%;
+  max-height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.SectionOne__Carousel .SectionOne__Cover {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.SectionOne__Carousel .SectionOne__Cover--Title {
+  position: relative;
+  top: -23rem;
+  left: 8rem;
+  z-index: 1;
+  color: $color-brown;
+}
+
+.SectionOne__Carousel .SectionOne__Cover--Title h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin: 0;
+  padding: 0;
+}
+
+.SectionOne__Carousel .SectionOne__Cover--Button button {
+  position: relative;
+  top: -12rem;
+  left: 8rem;
+  z-index: 1;
+  background-color: #ffebb9;
+  border: none;
+  border-radius: 0.5rem;
+  color: $color-brown;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  margin: 0 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.SectionOne__Carousel .SectionOne__Cover--Button button:hover {
+  background-color: $color-brown;
+  color: $color-beigefull;
+}

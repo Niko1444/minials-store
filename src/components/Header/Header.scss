@@ -10,90 +10,98 @@ $color-white: #fff;
 .Header {
   background-color: $color-white;
   color: $color-brown;
-  padding: 1.5rem 0rem;
-}
+  padding: 2rem 0rem;
 
-.Header ul {
-  list-style-type: none;
-}
+  &__RowWrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-.Header a {
-  color: $color-brown;
-  text-decoration: none;
-}
+  &__Logo {
+    h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin: 0;
+      padding: 0;
+    }
+  }
 
-.Header .Header__RowWrap {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+  ul {
+    list-style-type: none;
+  }
 
-.Header .Header__Logo h1 {
-  font-size: 3rem;
-  font-weight: 700;
-  margin: 0;
-  padding: 0;
-}
+  a {
+    color: $color-brown;
+    text-decoration: none;
+  }
 
-.Header .Header__Menu nav {
-  display: flex;
-  align-items: center;
-  margin: 0 2rem;
-}
+  &__Menu {
+    nav {
+      display: flex;
+      align-items: center;
+      margin: 0 2rem;
+    }
+    a {
+      margin: 0 1.5rem;
+    }
+  }
 
-.Header .Header__Menu nav a {
-  margin: 0 1.5rem;
-}
+  &__ColWrap2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
 
-.Header .Header__ColWrap2 {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
+  &__Setting {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1.5rem;
+    svg {
+      box-sizing: border-box;
+      transition: all 0.3s ease-out;
+      font-size: 1.6rem;
+      margin: 0 0.4rem;
+    }
+    svg:hover {
+      font-size: 2.5rem;
+    }
+  }
 
-.Header .Header__Setting svg {
-  font-size: 1.6rem;
-  margin: 0 0.4rem;
-}
+  nav {
+    a {
+      box-sizing: border-box;
+      transition: all 0.3s ease-out;
+    }
+  }
 
-.Header .Header__Setting {
-  margin-left: 1.5rem;
-}
-
-Header nav a {
-  box-sizing: border-box;
-  transition: all 0.3s ease-out;
-}
-
-Header nav a:hover,
-.active {
-  background-color: $color-beige;
-  padding: 0.4rem 0.6rem;
-  border-radius: 2rem;
-  font-weight: 700;
-}
-
-.Header .Header__Setting svg {
-  box-sizing: border-box;
-  transition: all 0.3s ease-out;
-}
-
-Header .Header__Setting svg:hover {
-  font-size: 2.5rem;
+  nav {
+    a:hover,
+    .active {
+      background-color: $color-beige;
+      padding: 0.4rem 1.5rem;
+      border-radius: 2rem;
+      font-weight: 700;
+    }
+  }
 }
 
 @media (min-width: 994px) {
-  .Header .Header__Burger {
-    display: none;
+  .Header {
+    &__Burger {
+      display: none;
+    }
   }
 }
 
 @media (max-width: 994px) {
-  .Header .Header__Menu nav {
-    display: none;
-  }
-
-  .Header .Header__Setting {
-    display: none;
+  .Header {
+    &__Menu nav {
+      display: none;
+    }
+    &__Setting {
+      display: none;
+    }
   }
 }

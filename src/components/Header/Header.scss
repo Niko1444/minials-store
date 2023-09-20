@@ -10,7 +10,8 @@ $color-white: #fff;
 .Header {
   background-color: $color-white;
   color: $color-brown;
-  padding: 2rem 0rem;
+  padding: 1.8rem 0rem;
+  padding-top: 2.5rem;
 
   &__RowWrap {
     display: flex;
@@ -22,8 +23,12 @@ $color-white: #fff;
     h1 {
       font-size: 3rem;
       font-weight: 700;
-      margin: 0;
-      padding: 0;
+    }
+    a {
+      padding-top: 0.6rem;
+      padding-left: 0.4rem;
+      padding-right: 0.4rem;
+      border: 0.3rem solid $color-brown;
     }
   }
 
@@ -87,7 +92,7 @@ $color-white: #fff;
   }
 }
 
-@media (min-width: 994px) {
+@media (min-width: 1200px) {
   .Header {
     &__Burger {
       display: none;
@@ -95,7 +100,7 @@ $color-white: #fff;
   }
 }
 
-@media (max-width: 994px) {
+@media (max-width: 1200px) {
   .Header {
     &__Menu nav {
       display: none;

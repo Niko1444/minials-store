@@ -23,10 +23,13 @@ const SectionOne = () => {
         </div>
         <div className="SectionOne__Cover--Description">
           <div className="TextBox">
-            <h5>
+            <h5 id="first">
               "Kindness, patience, and grace. <br /> The extraordinary found in
-              the ordinary". <br /> Bringing you not the most luxurious, but the
-              feeling of comfort and worthy.
+              the ordinary".
+            </h5>
+            <h5 id="second">
+              Bringing not the most luxurious, but the feeling of comfort and
+              worthy.
             </h5>
           </div>
         </div>

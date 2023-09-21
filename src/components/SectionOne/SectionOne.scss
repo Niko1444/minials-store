@@ -10,12 +10,15 @@ $color-white: #fff;
 
   &__Carousel {
     position: relative;
-
+    max-width: 100%;
+    max-height: auto;
     img {
+      display: block;
+      height: auto;
       max-width: 100%;
-      max-height: auto;
-      margin: 0;
-      padding: 0;
+      line-height: 1;
+      margin: auto;
+      width: 100%;
     }
   }
 
@@ -112,13 +115,58 @@ $color-white: #fff;
 
 @media (max-width: 992px) {
   .SectionOne__Cover {
-    &--Title {
-    }
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    top: 2rem;
+    left: 0;
 
     &--Description {
+      padding-top: 2%;
+      h5 {
+        text-align: center;
+        font-size: 1.3rem;
+        font-style: italic;
+        font-weight: 300;
+      }
     }
 
     &--Button {
+      padding-top: 3%;
+      button {
+        padding: 0.4rem 2.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  .SectionOne__Cover {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    top: 2rem;
+    left: 0;
+
+    &--Title {
+      padding-top: 0;
+    }
+
+    &--Description {
+      padding-top: 2%;
+      h5 {
+        text-align: center;
+        font-size: 1.1rem;
+        font-style: italic;
+        font-weight: 300;
+      }
+    }
+
+    &--Button {
+      padding-top: 3%;
+      button {
+        padding: 0.4rem 2.5rem;
+      }
     }
   }
 }

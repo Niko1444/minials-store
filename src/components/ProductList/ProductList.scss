@@ -1,0 +1,27 @@
+$color-beige: #ffebb9d6;
+$color-beigefull: #ffebb9;
+$color-brown: #383838;
+$color-grey: #888a91;
+$color-white: #fff;
+
+.ProductList {
+  &__Wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__Item {
+      border: 0.3rem solid $color-grey;
+    }
+
+    img {
+      aspect-ratio: 1/1;
+      width: 20rem;
+      height: 20rem;
+    }
+
+    button {
+      border-radius: 0.5rem;
+    }
+  }
+}

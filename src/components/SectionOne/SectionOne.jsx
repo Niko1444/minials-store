@@ -11,7 +11,12 @@ const SectionOne = () => {
           {JSON.map((item, id) => {
             return (
               <Carousel.Item interval={100000} key={id}>
-                <img src={item.img} alt="hinh" className="Carousel__Image" />
+                <img
+                  src={item.img}
+                  alt="just store image"
+                  loading="lazy"
+                  className="Carousel__Image"
+                />
               </Carousel.Item>
             );
           })}

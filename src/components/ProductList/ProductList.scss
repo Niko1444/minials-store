@@ -10,18 +10,24 @@ $color-white: #fff;
     flex-wrap: wrap;
     justify-content: space-between;
 
-    &__Item {
-      border: 0.3rem solid $color-grey;
+    &__Row {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
     }
 
     img {
+      max-width: 100%;
       aspect-ratio: 1/1;
-      width: 20rem;
-      height: 20rem;
+      width: 17rem;
+      height: auto;
+      display: block;
     }
+  }
 
-    button {
-      border-radius: 0.5rem;
-    }
+  &__Item {
+    border: 1px solid $color-brown;
+    margin-top: 2rem;
   }
 }

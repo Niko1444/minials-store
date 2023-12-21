@@ -7,7 +7,9 @@ const ProductList = () => {
     <div className="ProductList__Container">
       <Container>
         <div className="ProductList">
-          <div id="ProductList__Wrap" className="ProductList__Wrap"></div>
+          <div id="ProductList__Wrap" className="ProductList__Wrap">
+            <div id="ProductList__Row" className="ProductList__Row"></div>
+          </div>
         </div>
       </Container>
     </div>

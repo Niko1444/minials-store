@@ -6,12 +6,13 @@ export const fetchApi = async (api) => {
 
 const productsContainer = document.querySelector("#ProductList__Wrap");
 
-fetchApi("http://localhost:3000/products").then((data) => {
-  let htmls = [];
-  const productsToShow = data.slice(0, 8);
+fetchApi("https://6585ac26022766bcb8c9202c.mockapi.io/products").then(
+  (data) => {
+    let htmls = [];
+    const productsToShow = data.slice(0, 8);
 
-  productsToShow.forEach((item, index) => {
-    htmls.push(`
+    productsToShow.forEach((item, index) => {
+      htmls.push(`
       <div class="ProductList__Item">
         <div class="ProductList__Item__Image">
           <img src="${item.thumbnail}" alt="${item.title}" />
@@ -23,11 +24,12 @@ fetchApi("http://localhost:3000/products").then((data) => {
       </div>
     `);
 
-    if ((index + 1) % 4 === 0) {
-      htmls.push("</div>");
-    }
-  });
-  htmls.push("</div>");
+      if ((index + 1) % 4 === 0) {
+        htmls.push("</div>");
+      }
+    });
+    htmls.push("</div>");
 
-  productsContainer.innerHTML = htmls.join("");
-});
+    productsContainer.innerHTML = htmls.join("");
+  }
+);
